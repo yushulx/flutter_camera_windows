@@ -59,6 +59,8 @@ class _MyAppState extends State<MyApp> {
     _errorStreamSubscription = null;
     _cameraClosingStreamSubscription?.cancel();
     _cameraClosingStreamSubscription = null;
+    _frameAvailableStreamSubscription?.cancel();
+    _frameAvailableStreamSubscription = null;
     super.dispose();
   }
 
